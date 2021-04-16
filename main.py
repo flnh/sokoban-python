@@ -21,6 +21,7 @@ def main(stdscr):
     while True:
         
         entry = stdscr.getch()
+        globals()['entry'] = entry
         stdscr.clear()
         
         if entry == 27 or entry == 113:
